@@ -95,7 +95,32 @@ aside .playlist h5 {
 /** menù bottom **/
 aside .menu-bottom {
   height: 80px;
-  background-color: antiquewhite; /*da togliere*/
+  margin: 0 20px;
+}
+
+.menu-bottom .installa img {
+  height: 20px;
+  vertical-align: middle;
+  filter: invert(0.5);
+  margin-right: 5px;
+}
+
+.menu-bottom .installa {
+  padding-bottom: 10px;  
+  border-bottom: 1px solid #6D6D6D;
+}
+
+.menu-bottom .profile img {
+  height: 26px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+  background-color: #6D6D6D;
+}
+
+.menu-bottom .profile {
+  margin-top: 10px;
+  color: white;
 }
 
 /***** MAIN *****/
