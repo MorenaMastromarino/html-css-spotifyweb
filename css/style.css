@@ -131,14 +131,28 @@ main {
   background-color: #141922;
 }
 
+/* button fixed */
 .button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 230px;
   height: 90px;
-  width: 100%;   
+  width: calc(100% - 230px);   
   z-index: 500;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.button .btn {
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 15px 40px;
+  margin-right: 25px;
+  cursor: pointer;
 }
 
 
