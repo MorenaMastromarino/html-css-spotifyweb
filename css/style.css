@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  color: #6D6D6D;
 }
 
 .clearfix::after {
@@ -23,18 +24,70 @@ aside {
   background-color: rgb(0, 0, 0);
 }
 
+/*** menù top ***/
+.menu-top {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 170px);  
+}
+
+/* logo */
+aside .logo {
+  padding: 20px;
+}
+
+aside .logo img {
+  height: 45px;
+}
+
+/* icons */
+aside .icons li {
+  line-height: 35px;
+}
+
+aside .icons img {
+  height: 25px;
+  vertical-align: middle;
+  padding-left: 20px;
+  filter: invert(0.5);
+}
+
+aside .icons span {
+  font-weight: bold;
+}
+
+aside .icons li.active {
+  color: white;
+  border-left: 3px solid #ADFF2F;  
+}
+
+aside .icons li.active img {
+ filter: invert(0);
+}
+
+/* playlist */
+.playlist {
+  overflow: auto;
+}
+
+/** menù bottom **/
+aside .menu-bottom {
+  height: 80px;
+  background-color: antiquewhite; /*da togliere*/
+}
+
 /***** MAIN *****/
 main {
   float: left;
   height: calc(100vh - 90px);
-  width: calc(100vw - 230px);
+  width: calc(100% - 230px);
   background-color: #141922;
 }
 
 .button {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 230px;
   height: 90px;
   width: 100%;   
   z-index: 500;
