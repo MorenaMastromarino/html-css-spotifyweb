@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   color: #6D6D6D;
 }
 
@@ -15,6 +16,9 @@ body {
   clear: both;
 }
 
+h5 {
+  color: white;
+}
 
 /***** ASIDE *****/
 aside {
@@ -28,7 +32,15 @@ aside {
 .menu-top {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 170px);  
+  height: calc(100vh - 170px); 
+}
+
+.menu-top ul {
+  list-style: none;
+}
+
+.menu-top ul li {
+  line-height: 35px;
 }
 
 /* logo */
@@ -41,19 +53,16 @@ aside .logo img {
 }
 
 /* icons */
-aside .icons li {
-  line-height: 35px;
+aside .icons {
+  padding-bottom: 25px;
 }
 
 aside .icons img {
   height: 25px;
   vertical-align: middle;
-  padding-left: 20px;
   filter: invert(0.5);
-}
-
-aside .icons span {
-  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 3px;
 }
 
 aside .icons li.active {
@@ -66,8 +75,21 @@ aside .icons li.active img {
 }
 
 /* playlist */
-.playlist {
-  overflow: auto;
+aside .playlist {
+ padding-left: 20px;
+ overflow: auto;
+}
+
+aside .playlist h5 {
+  text-transform: uppercase;
+}
+
+.playlist ul i {
+  font-size: 15px;
+  padding: 10px;
+  margin: 15px 7px 5px 0;
+  color: black;
+  background-color: #6D6D6D;
 }
 
 /** menù bottom **/
