@@ -25,7 +25,7 @@ body {
   clear: both;
 }
 
-h5, h6 {
+h2, h5, h6 {
   color: white;
 }
 
@@ -212,6 +212,46 @@ main {
   left: 30%;
   background-color: #ADFF2F;
 }
+
+/*** content ***/
+.content {
+  padding: 20px;
+}
+
+.content h2 {
+  font-size: 26px;
+}
+
+.content .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+.album-card {
+  padding-right: 20px;
+}
+
+.album-card img {
+  width: 12vw; 
+  height: 12vw;  
+}
+
+.album-card .album-name {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.album-card .album-name h6 {
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 8px;
+}
+
+.album-card .album-name span {
+  font-size: 13px;  
+}
+
 
 /***** FOOTER *****/
 footer {
