@@ -233,13 +233,41 @@ main {
   padding: 30px 0;
 }
 
+/* album-card */
 .album-card {
   padding-right: 20px;
+  cursor: pointer;
 }
 
-.album-card img {
-  width: 12vw; 
-  height: 12vw;  
+.album-card .album-image {
+  position: relative;
+  width: 12vw;
+  height: 12vw;
+}
+
+.album-card .album-image img {
+  width: 100%;
+}
+
+.album-card .album-image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  text-align: center;
+  line-height: 12vw;  
+  background-color: rgba(0, 0, 0, 0.5);  
+}
+
+.album-card .album-image .overlay i {
+  font-size: 70px;
+  color: white;
+  vertical-align: middle;
+}
+
+.album-card .album-image:hover .overlay {
+  display: block;
 }
 
 .album-card .album-name {
@@ -259,6 +287,10 @@ main {
 }
 
 .artisti .album-card img {
+  border-radius: 50%;
+}
+
+.artisti .album-image:hover .overlay {
   border-radius: 50%;
 }
 
