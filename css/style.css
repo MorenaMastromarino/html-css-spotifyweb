@@ -159,6 +159,7 @@ main {
   height: 100%;
   width: calc(100% - 230px);
   background-color: #141922;
+  overflow: auto;
 }
 
 /* call to action fixed */
@@ -185,6 +186,32 @@ main {
   cursor: pointer;
 }
 
+/* main menu */
+.main-menu {
+  padding-top: 90px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-menu ul li {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 20px;
+  padding-bottom: 6px;
+}
+
+.main-menu ul li.active::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 40%;
+  top: 100%;
+  left: 30%;
+  background-color: #ADFF2F;
+}
 
 /***** FOOTER *****/
 footer {
