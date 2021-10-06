@@ -29,6 +29,22 @@ h5, h6 {
   color: white;
 }
 
+.bar {
+  position: relative;
+  display: inline-block;
+  height: 4px;
+  vertical-align: middle;
+  background-color: #5A5A5A;
+}
+
+.bar.small {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  background-color: #C1C1C1;
+}
+
 /***** ASIDE *****/
 aside {
   float: left;
@@ -203,44 +219,49 @@ footer {
 .footer-center {
   text-align: center;
   width: 40%;
-  color: white;
 }
 
-.footer-center .player-icons i {
+.footer-center .player-icons i,
+.footer-right .icons i {
   vertical-align: middle;
   font-size: 16px;
   padding: 10px;
+  color: white;
 }
 
 .footer-center .player-icons .fa-play-circle {
   font-size: 30px;
 }
 
-.footer-center .player-bar span {
+.footer-center .player span {
   font-size: 11px;
+  color: white;
 }  
 
-.footer-center .player-bar .bar {
-  position: relative;
-  display: inline-block;
-  height: 4px;  
-  width: 430px;
-  vertical-align: middle;
+.footer-center .bar.player-bar {
+  width: 430px;  
   margin: 0 25px;
-  background-color: #5A5A5A;
 }
   
-.footer-center .player-bar .bar.listened {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 85px;
-  margin: 0;
-  background-color: #C1C1C1;
+.footer-center .player-bar .bar.small {  
+  width: 85px;  
 }
 
 /* footer-right */
 .footer-right {
-  width: 230px;
-  background-color: teal;
+  width: 260px;
+  line-height: 90px;
+  vertical-align: middle;
+}
+
+.footer-right .icons {
+  display: inline-block;
+}
+
+.footer-right .bar.volume {
+  width: 120px;  
+}
+  
+.footer-right .volume .bar.small {  
+  width: 25px;  
 }
