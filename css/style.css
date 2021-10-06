@@ -158,7 +158,27 @@ main {
 
 /***** FOOTER *****/
 footer {
+  display: flex;
+  justify-content: space-between;
   height: 90px;
   width: 100vw;
   background-color: #282828;
+}
+
+/* footer left */
+.footer-left {
+  width: 230px;
+  background-color: teal;
+}
+
+/* footer center */
+.footer-center {
+  width: 40%;
+  background-color: violet;
+}
+
+/* footer-right */
+.footer-right {
+  width: 230px;
+  background-color: teal;
 }
