@@ -222,6 +222,11 @@ main {
   font-size: 26px;
 }
 
+.content p {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
 .content .row {
   display: flex;
   flex-wrap: wrap;
@@ -238,6 +243,7 @@ main {
 }
 
 .album-card .album-name {
+  width: 12vw;
   text-align: center;
   padding-bottom: 10px;
 }
@@ -251,6 +257,11 @@ main {
 .album-card .album-name span {
   font-size: 13px;  
 }
+
+.artisti .album-card img {
+  border-radius: 50%;
+}
+
 
 
 /***** FOOTER *****/
