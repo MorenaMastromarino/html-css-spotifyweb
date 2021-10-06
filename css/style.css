@@ -201,8 +201,42 @@ footer {
 
 /* footer center */
 .footer-center {
+  text-align: center;
   width: 40%;
-  background-color: violet;
+  color: white;
+}
+
+.footer-center .player-icons i {
+  vertical-align: middle;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.footer-center .player-icons .fa-play-circle {
+  font-size: 30px;
+}
+
+.footer-center .player-bar span {
+  font-size: 11px;
+}  
+
+.footer-center .player-bar .bar {
+  position: relative;
+  display: inline-block;
+  height: 4px;  
+  width: 430px;
+  vertical-align: middle;
+  margin: 0 25px;
+  background-color: #5A5A5A;
+}
+  
+.footer-center .player-bar .bar.listened {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85px;
+  margin: 0;
+  background-color: #C1C1C1;
 }
 
 /* footer-right */
