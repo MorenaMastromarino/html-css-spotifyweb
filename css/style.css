@@ -105,6 +105,10 @@ aside .logo img {
   height: 45px;
 }
 
+aside .logo .x-s {
+  display: none;
+}
+
 /* icons */
 aside .icons {
   padding-bottom: 25px;
@@ -222,6 +226,7 @@ main {
 .call-to-action .btn {
   text-transform: uppercase;
   color: white;
+  font-size: 10px;
   border: 1px solid white;
   border-radius: 25px;
   padding: 15px 40px;
@@ -236,7 +241,6 @@ main {
 /* main menu */
 .main-menu {
   padding-top: 90px;
-  width: 95%;
   margin: 0 auto;
   text-align: center;
 }
@@ -246,7 +250,8 @@ main {
   list-style: none;
   display: inline-block;
   text-transform: uppercase;
-  margin: 20px;
+  font-size: 10px;
+  margin: 15px;
   padding-bottom: 6px;
 }
 
@@ -266,7 +271,7 @@ main {
 }
 
 .content h2 {
-  font-size: 26px;
+  font-size: 24px;
 }
 
 .content p {
@@ -283,7 +288,7 @@ main {
 /* album-card */
 .album-card {
   width: calc(100% / 6);
-  padding-right: 20px;
+  padding-right: 15px;
   cursor: pointer;
 }
 
@@ -319,7 +324,6 @@ main {
 }
 
 .album-card .album-name {
-  width: 12vw;
   text-align: center;
   padding-bottom: 10px;
 }
@@ -331,7 +335,7 @@ main {
 }
 
 .album-card .album-name span {
-  font-size: 13px;  
+  font-size: 14px;  
 }
 
 .artisti .album-card img {
@@ -453,4 +457,95 @@ footer {
 
 .footer-right .volume i {
   left: 25px;
+}
+
+/*MEDIA QUERIES */
+
+/* medium */
+@media screen and (max-width: 991px) {
+  .album-card {
+    width: calc(100% / 4);
+    padding-right: 10px;    
+  }
+}
+
+/* small */
+@media screen and (max-width: 767px) {
+  .album-card {
+    width: calc(100% / 2);       
+  }
+}
+
+/* x-small */
+@media screen and (max-width: 575px) {
+  /* dimensioni */
+  aside {
+    width: 50px;
+  }
+
+  main {
+    width: calc(100% - 50px);    
+  }
+
+  .call-to-action {
+    width: calc(100% - 50px);   
+  }
+
+  /* logo */
+  aside .logo {
+    padding: 5px 10px;
+  }
+
+  aside .logo img:first-of-type {
+    display: none;
+  }
+
+  aside .logo .x-s {
+    display: inline-block;
+    height: 30px;
+  }
+
+  /* icons */
+  aside .icons span {
+    display: none;
+  }
+
+  aside .icons img {
+    padding-left: 15px;
+  }
+
+  aside .icons li.active a {
+    color: #6D6D6D;
+  }  
+  
+  aside .icons li.active {
+    border-left: none;  
+  }
+  
+  aside .icons li.active a img {
+   filter: invert(0.5);
+  }
+  
+  aside .icons li a:hover img {
+    filter: invert(0);
+  }
+
+  /* playlist */
+  .menu-top .crea-playlist, aside .playlist {
+    display: none;
+  }
+
+  /* menu bottom */
+  aside .menu-bottom {
+    margin: 0 15px;
+  }
+
+  .menu-bottom span {
+    display: none;
+  }
+
+  .menu-bottom .installa {
+    border: none;    
+  }
+  
 }
