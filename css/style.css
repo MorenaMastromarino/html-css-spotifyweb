@@ -29,6 +29,15 @@ h2, h5, h6 {
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: #6D6D6D;
+}
+
+a:hover {
+  color: white;
+}
+
 .bar {
   position: relative;
   display: inline-block;
@@ -91,13 +100,17 @@ aside .icons img {
   padding-right: 3px;
 }
 
-aside .icons li.active {
+aside .icons li.active a {
   color: white;
   border-left: 3px solid #ADFF2F;  
 }
 
-aside .icons li.active img {
+aside .icons li.active a img {
  filter: invert(0);
+}
+
+aside .icons a:hover img {
+  filter: invert(0);
 }
 
 /* playlist */
@@ -117,6 +130,10 @@ aside .playlist i {
   background-color: #6D6D6D;
 }
 
+aside .playlist a:hover i {
+  background-color: white;
+}
+
 .playlist ul {
   min-height: 60px; 
   overflow: auto;
@@ -128,6 +145,12 @@ aside .menu-bottom {
   margin: 0 20px;
 }
 
+.menu-bottom .installa {
+  padding-bottom: 10px;  
+  border-bottom: 1px solid #6D6D6D;
+  margin-bottom: 10px;
+}
+
 .menu-bottom .installa img {
   height: 20px;
   vertical-align: middle;
@@ -135,9 +158,8 @@ aside .menu-bottom {
   margin-right: 5px;
 }
 
-.menu-bottom .installa {
-  padding-bottom: 10px;  
-  border-bottom: 1px solid #6D6D6D;
+.menu-bottom .installa a:hover img {
+  filter: invert(0);
 }
 
 .menu-bottom .profile img {
@@ -148,8 +170,7 @@ aside .menu-bottom {
   background-color: #6D6D6D;
 }
 
-.menu-bottom .profile {
-  margin-top: 10px;
+.menu-bottom .profile span {
   color: white;
 }
 
@@ -184,6 +205,10 @@ main {
   padding: 15px 40px;
   margin-right: 25px;
   cursor: pointer;
+}
+
+.call-to-action .btn:hover {
+  transform: scale(1.1);
 }
 
 /* main menu */
@@ -341,6 +366,10 @@ footer {
 
 .footer-center .player-icons .fa-play-circle {
   font-size: 30px;
+}
+
+.player-icons .fa-play-circle:hover {
+  transform: scale(1.2);
 }
 
 .footer-center .player span {
