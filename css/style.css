@@ -45,6 +45,7 @@ a:hover {
   vertical-align: middle;
   background-color: #5A5A5A;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .bar.small {
@@ -226,7 +227,7 @@ main {
 .call-to-action .btn {
   text-transform: uppercase;
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   border: 1px solid white;
   border-radius: 25px;
   padding: 15px 40px;
@@ -250,7 +251,7 @@ main {
   list-style: none;
   display: inline-block;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 12px;
   margin: 15px;
   padding-bottom: 6px;
 }
@@ -365,7 +366,8 @@ footer {
 }
 
 .footer-left img {
-  max-width: 50px;
+  width: 30%;
+  padding: 10px;
 }
 
 .footer-left .song-name {
@@ -374,11 +376,11 @@ footer {
 }
 
 .footer-left .song-name h6 {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .footer-left .song-name a {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .footer-left .song-name a:hover {
@@ -387,8 +389,8 @@ footer {
 }
 
 .footer-left .icons i {
-  font-size: 18px;
-  padding-left: 10px;
+  font-size: 16px;
+  padding-left: 8px;
 }
 
 .footer-left .icons i:hover {
@@ -398,13 +400,12 @@ footer {
 /* footer center */
 .footer-center {
   text-align: center;
-  width: 40%;
+  min-width: 50%;
 }
 
-.footer-center .player-icons i,
-.footer-right .icons i {
+.footer-center .player-icons i {
   vertical-align: middle;
-  font-size: 16px;
+  font-size: 15px;
   padding: 10px;
   color: white;
   cursor: pointer;
@@ -424,39 +425,43 @@ footer {
 }  
 
 .footer-center .bar.player-bar {
-  width: 430px;  
-  margin: 0 25px;
+  width: 70%;  
+  margin: 0 2%;
 }
   
 .footer-center .player-bar .bar.small {  
-  width: 85px;  
+  width: 20%;  
 }
 
 .footer-center .player-bar i {
-  left: 85px;
+  left: 20%;
 }
 
 /* footer-right */
 .footer-right {
-  width: 260px;
-  line-height: 90px;
-  vertical-align: middle;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 230px;
 }
 
-.footer-right .icons {
-  display: inline-block;
+.footer-right i {
+  padding-right: 2%;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
 }
 
 .footer-right .bar.volume {
-  width: 120px;  
+  width: 50%;  
 }
   
 .footer-right .volume .bar.small {  
-  width: 25px;  
+  width: 25%;  
 }
 
 .footer-right .volume i {
-  left: 25px;
+  left: 25%;
 }
 
 /*MEDIA QUERIES */
@@ -465,7 +470,7 @@ footer {
 @media screen and (max-width: 991px) {
   .album-card {
     width: calc(100% / 4);
-    padding-right: 10px;    
+    padding-right: 10px; 
   }
 }
 
@@ -547,5 +552,8 @@ footer {
   .menu-bottom .installa {
     border: none;    
   }
-  
+  /* footer */
+  .footer-left img {
+    width: 40%;
+  }
 }
