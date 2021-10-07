@@ -81,8 +81,10 @@ aside {
 
 /*** menù top ***/
 .menu-top {
+  display: flex;
+  flex-direction: column;
   height: calc(100% - 80px);
-  min-height: 340px; 
+  min-height: 350px; 
   overflow: hidden;
 }
 
@@ -133,15 +135,15 @@ aside .icons a:hover img {
 }
 
 /* playlist */
-aside .playlist {
+aside .crea-playlist {
  padding-left: 20px;
 }
 
-aside .playlist h5 {
+aside .crea-playlist h5 {
   text-transform: uppercase;
 }
 
-aside .playlist i {
+aside .crea-playlist i {
   font-size: 15px;
   padding: 10px;
   margin: 15px 7px 5px 0;
@@ -149,12 +151,12 @@ aside .playlist i {
   background-color: #6D6D6D;
 }
 
-aside .playlist a:hover i {
+aside .crea-playlist a:hover i {
   background-color: white;
 }
 
-.playlist ul {
-  min-height: 60px; 
+aside ul.playlist {
+  padding-left: 20px;
   overflow: auto;
 }
 
@@ -165,7 +167,8 @@ aside .menu-bottom {
 }
 
 .menu-bottom .installa {
-  padding-bottom: 10px;  
+  padding-top: 5px; 
+  padding-bottom: 10px; 
   border-bottom: 1px solid #6D6D6D;
   margin-bottom: 10px;
 }
