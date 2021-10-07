@@ -44,6 +44,7 @@ a:hover {
   height: 4px;
   vertical-align: middle;
   background-color: #5A5A5A;
+  cursor: pointer;
 }
 
 .bar.small {
@@ -52,6 +53,21 @@ a:hover {
   left: 0;
   margin: 0;
   background-color: #C1C1C1;
+}
+
+.bar i {
+  display: none;
+  position: absolute;
+  top: -6px;  
+  color: white;
+}
+
+.bar:hover .bar.small {
+  background-color: #ADFF2F;
+}
+
+.bar:hover i {
+  display: block;
 }
 
 /***** ASIDE *****/
@@ -102,6 +118,9 @@ aside .icons img {
 
 aside .icons li.active a {
   color: white;
+}  
+
+aside .icons li.active {
   border-left: 3px solid #ADFF2F;  
 }
 
@@ -338,16 +357,34 @@ footer {
 }
 
 .footer-left img {
-  width: 50px;
-  height: 50px;
+  max-width: 50px;
 }
 
-.footer-left span {
-  font-size: 11px;
+.footer-left .song-name {
+  display: flex;
+  flex-direction: column;
 }
 
-.footer-left i {
+.footer-left .song-name h6 {
+  font-size: 13px;
+}
+
+.footer-left .song-name a {
+  font-size: 12px;
+}
+
+.footer-left .song-name a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-left .icons i {
+  font-size: 18px;
   padding-left: 10px;
+}
+
+.footer-left .icons i:hover {
+  color: white;
 }
 
 /* footer center */
@@ -362,6 +399,7 @@ footer {
   font-size: 16px;
   padding: 10px;
   color: white;
+  cursor: pointer;
 }
 
 .footer-center .player-icons .fa-play-circle {
@@ -386,6 +424,10 @@ footer {
   width: 85px;  
 }
 
+.footer-center .player-bar i {
+  left: 85px;
+}
+
 /* footer-right */
 .footer-right {
   width: 260px;
@@ -403,4 +445,8 @@ footer {
   
 .footer-right .volume .bar.small {  
   width: 25px;  
+}
+
+.footer-right .volume i {
+  left: 25px;
 }
