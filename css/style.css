@@ -233,6 +233,7 @@ main {
   padding: 15px 40px;
   margin-right: 25px;
   cursor: pointer;
+  transition: transform 0.4s;
 }
 
 .call-to-action .btn:hover {
@@ -282,7 +283,7 @@ main {
 
 .content .row {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap;*/  /*senza bonus */
   padding: 30px 0;
 }
 
@@ -313,10 +314,11 @@ main {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5); 
   opacity: 0; 
+  transition: opacity 0.4s;
 }
 
 .album-card .album-image .overlay i {
-  font-size: 70px;
+  font-size: 4vw;
   color: white;
 }
 
@@ -413,6 +415,7 @@ footer {
 
 .footer-center .player-icons .fa-play-circle {
   font-size: 30px;
+  transition: transform 0.4s;
 }
 
 .player-icons .fa-play-circle:hover {
@@ -471,7 +474,13 @@ footer {
   .album-card {
     width: calc(100% / 4);
     padding-right: 10px; 
+    flex-shrink: 0;
   }
+
+  /* bonus */
+  .content .row {
+    overflow: hidden;
+  } 
 }
 
 /* small */
@@ -555,5 +564,12 @@ footer {
   /* footer */
   .footer-left img {
     width: 40%;
+  }
+}
+
+/* bonus */
+@media screen and (max-height: 180px) {
+  .call-to-action {
+    display: none;
   }
 }
